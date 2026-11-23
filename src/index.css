@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-[#202124] antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Minimalist scrollbars */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #F7F8FA;
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* KaTeX light theme styling */
+.katex {
+  font-size: 1.08em;
+  color: #111827;
+}
+
+.katex .mord, .katex .mbin, .katex .mrel {
+  color: #1F2937;
+}
+
+.katex-display {
+  margin: 0.5em 0 !important;
+}
+
+/* Tabular figures for aligned mathematical numbers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
