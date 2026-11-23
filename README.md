@@ -136,4 +136,4 @@ All 6 test groups (27 assertions) verify:
 
 ## License
 
-MIT
+NIT Kurukshetra, India
